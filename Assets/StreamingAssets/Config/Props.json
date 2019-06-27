@@ -1,0 +1,44 @@
+﻿{
+  "props": [
+    {
+      "name": "纸条",
+      "description": "意外得到的纸飞机，摊开纸即可看见“去西边”字样",
+      "spriteIndex": 0
+    },
+    {
+      "name": "粉钥匙",
+      "description": "一把粉色的门钥匙",
+      "spriteIndex": 1
+    },
+    {
+      "name": "苹果",
+      "description": "一定程度上能缓解饥饿",
+      "spriteIndex": 2
+    },
+    {
+      "name": "音乐盒",
+      "description": "菲莉亚赠送的音乐盒，兴许之后能派上用场",
+      "spriteIndex": 3
+    },
+    {
+      "name": "信件",
+      "description": "美术馆门口获得的信件，上书“见面礼，勿打扰”。",
+      "spriteIndex": 4
+    },
+    {
+      "name": "雨街",
+      "description": "美术馆门口获得的画，背面写着“1018”。",
+      "spriteIndex": 5
+    },
+    {
+      "name": "残缺画",
+      "description": "拼图顺利后获得的一幅画，里面的人长得有点像某人。",
+      "spriteIndex": 6
+    },
+    {
+      "name": "完整画",
+      "description": "在接受艾尔给的两块画的碎片后，拼凑成了完整的一幅画。",
+      "spriteIndex": 7
+    }
+  ]
+}

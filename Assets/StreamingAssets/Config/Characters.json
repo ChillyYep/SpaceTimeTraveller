@@ -1,0 +1,24 @@
+﻿{
+  "spritesList": [
+    {
+      "name": "李肖",
+      "index": 0
+    },
+    {
+      "name": "菲莉亚",
+      "index": 1
+    },
+    {
+      "name": "亚蒂",
+      "index": 2
+    },
+    {
+      "name": "艾尔",
+      "index": 3
+    },
+    {
+      "name": "苏堇",
+      "index": 4
+    }
+  ]
+}
