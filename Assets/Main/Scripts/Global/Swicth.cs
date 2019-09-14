@@ -119,11 +119,7 @@ public class Swicth : MonoBehaviour {
     {
         if (DialogManager.instance != null)
         {
-<<<<<<< HEAD
-            DialogManager.instance.AddUnRepeatableDialog(GloabalManager.StoryFileName.GalleryOutdoor2);
-=======
             DialogManager.instance.AddUnRepeatableDialog(GlobalManager.StoryFileName.GalleryOutdoor2);
->>>>>>> new
         }
     }
     private void AdySwichOff()
@@ -133,11 +129,7 @@ public class Swicth : MonoBehaviour {
 
     private void travelSwitchOn()
     {
-<<<<<<< HEAD
-        GloabalManager.SceneCodeManager.ChangeScene(GloabalManager.SceneCodeManager.SecondChapter);
-=======
         GlobalManager.SceneCode.ChangeScene(GlobalManager.SceneCode.SecondChapter);
->>>>>>> new
     }
 
     private void HappyEnd()
@@ -178,21 +170,6 @@ public class Swicth : MonoBehaviour {
     {
         switch (storyFileName)
         {
-<<<<<<< HEAD
-            case GloabalManager.StoryFileName.CastleIndoor1:
-                break;
-            case GloabalManager.StoryFileName.CastleIndoor2:
-                SafeTrigger.instance.allowKeyDown = true;
-                break;
-            case GloabalManager.StoryFileName.CastleOutdoor1:
-                break;
-            case GloabalManager.StoryFileName.CastleOutdoor2:
-                break;
-            case GloabalManager.StoryFileName.FriaBedroom1:
-                FriaSwicthOn();
-                break;
-            case GloabalManager.StoryFileName.FriaBedroom2:
-=======
             case GlobalManager.StoryFileName.CastleIndoor1:
                 break;
             case GlobalManager.StoryFileName.CastleIndoor2:
@@ -206,29 +183,11 @@ public class Swicth : MonoBehaviour {
                 FriaSwicthOn();
                 break;
             case GlobalManager.StoryFileName.FriaBedroom2:
->>>>>>> new
                 if (dinningHallDoorTrigger != null)
                 {
                     dinningHallDoorTrigger.enableEnter = true;
                 }
                 break;
-<<<<<<< HEAD
-            case GloabalManager.StoryFileName.FriaBedroomFound://给苹果之后的对话结束时调用
-                AdyTalk1();
-                break;
-            case GloabalManager.StoryFileName.FriaBedroom3://开启Ady动画
-                AdySwitchOn();
-                break;
-            case GloabalManager.StoryFileName.FriaBedroom4:
-                travelSwitchOn();
-                break;
-            case GloabalManager.StoryFileName.FriaBedroomNoFound:
-                break;
-            case GloabalManager.StoryFileName.GalleryOutdoor1:
-                AfterTakeEnvelope();
-                break;
-            case GloabalManager.StoryFileName.Studio1:
-=======
             case GlobalManager.StoryFileName.FriaBedroomFound://给苹果之后的对话结束时调用
                 AdyTalk1();
                 break;
@@ -244,26 +203,11 @@ public class Swicth : MonoBehaviour {
                 AfterTakeEnvelope();
                 break;
             case GlobalManager.StoryFileName.Studio1:
->>>>>>> new
                 if (CameraMoveAnimController.instance != null)
                 {
                     CameraMoveAnimController.instance.UnBind();
                 }
                 break;
-<<<<<<< HEAD
-            case GloabalManager.StoryFileName.TalkToAyr1:
-                break;
-            case GloabalManager.StoryFileName.TalkToAyr2:
-                SafeTrigger.instance.allowKeyDown = true;
-                break;
-            case GloabalManager.StoryFileName.TalkToAyr3:
-                //
-                break;
-            case GloabalManager.StoryFileName.TalkToAyr4:
-                Choose();
-                break;
-            case GloabalManager.StoryFileName.TalkToSuJin:
-=======
             case GlobalManager.StoryFileName.TalkToAyr1:
                 break;
             case GlobalManager.StoryFileName.TalkToAyr2:
@@ -276,7 +220,6 @@ public class Swicth : MonoBehaviour {
                 Choose();
                 break;
             case GlobalManager.StoryFileName.TalkToSuJin:
->>>>>>> new
                 HappyEnd();
                 break;
             default:
@@ -288,11 +231,7 @@ public class Swicth : MonoBehaviour {
     {
         //yield return new WaitForSeconds(2.0f);
         //UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(GloabalManager.SceneCodeManager.MainUI);
-<<<<<<< HEAD
-        GloabalManager.SceneCodeManager.ChangeScene(GloabalManager.SceneCodeManager.MainUI);
-=======
         GlobalManager.SceneCode.ChangeScene(GlobalManager.SceneCode.MainUI);
->>>>>>> new
     }
 
 }

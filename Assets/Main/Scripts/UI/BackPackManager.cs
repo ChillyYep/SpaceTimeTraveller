@@ -41,11 +41,7 @@ public class BackPackManager : MonoBehaviour {
     }
     void Update()
     {
-<<<<<<< HEAD
-        if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == GloabalManager.SceneCodeManager.MainUI)
-=======
         if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == GlobalManager.SceneCode.MainUI)
->>>>>>> new
         {
             instance = null;
             DestroyImmediate(backpack);
@@ -58,11 +54,7 @@ public class BackPackManager : MonoBehaviour {
         currentPropsDictionary.Add(propName, allPropsDictionary[propName]);
         if (TipsManager.instance != null)
         {
-<<<<<<< HEAD
-            TipsManager.instance.FlyIn(String.Format(GloabalManager.Tips.GetSomeProp1, propName));
-=======
             TipsManager.instance.FlyIn(String.Format(GlobalManager.Tips.GetSomeProp1, propName));
->>>>>>> new
         }
         if (Backpack.instance != null)//添加到背包
         {
@@ -89,17 +81,10 @@ public class BackPackManager : MonoBehaviour {
             switch (propNameList.Count)
             {
                 case 1:
-<<<<<<< HEAD
-                    TipsManager.instance.FlyIn(String.Format(GloabalManager.Tips.GetSomeProp1, propNameList[0]));
-                    break;
-                case 2:
-                    TipsManager.instance.FlyIn(String.Format(GloabalManager.Tips.GetSomeProp2, propNameList[0], propNameList[1]));
-=======
                     TipsManager.instance.FlyIn(String.Format(GlobalManager.Tips.GetSomeProp1, propNameList[0]));
                     break;
                 case 2:
                     TipsManager.instance.FlyIn(String.Format(GlobalManager.Tips.GetSomeProp2, propNameList[0], propNameList[1]));
->>>>>>> new
                     break;
                 default:
                     break;
@@ -111,11 +96,7 @@ public class BackPackManager : MonoBehaviour {
         currentPropsDictionary.Remove(propName);
         if (TipsManager.instance != null)
         {
-<<<<<<< HEAD
-            TipsManager.instance.FlyIn(String.Format(GloabalManager.Tips.LoseSomeProp, propName));
-=======
             TipsManager.instance.FlyIn(String.Format(GlobalManager.Tips.LoseSomeProp, propName));
->>>>>>> new
         }
         if (Backpack.instance != null)//添加到背包
         {
@@ -132,11 +113,7 @@ public class BackPackManager : MonoBehaviour {
         }
         else//展现层
         {
-<<<<<<< HEAD
-            backpack.GetComponent<Canvas>().sortingLayerName = GloabalManager.LayerNameManager.UILayer;
-=======
             backpack.GetComponent<Canvas>().sortingLayerName = GlobalManager.LayerName.UILayer;
->>>>>>> new
             backpack.GetComponent<Canvas>().sortingOrder = 1;
         }
     }
@@ -176,11 +153,7 @@ public class BackPackManager : MonoBehaviour {
         {
             try
             {
-<<<<<<< HEAD
-                fileStream = new FileStream(GloabalManager.PathNameManager.PropsPath, FileMode.Open, FileAccess.Read);
-=======
                 fileStream = new FileStream(GlobalManager.PathName.PropsPath, FileMode.Open, FileAccess.Read);
->>>>>>> new
             }
             catch
             {

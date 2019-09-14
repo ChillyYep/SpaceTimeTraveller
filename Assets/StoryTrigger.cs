@@ -58,11 +58,7 @@ public class StoryTrigger : MonoBehaviour
         //mainCharacter.GetComponent<CharacterController>().moveable = true;
         if (DialogManager.instance != null)
         {
-<<<<<<< HEAD
-            DialogManager.instance.AddUnRepeatableDialog(GloabalManager.StoryFileName.TalkToSuJin);
-=======
             DialogManager.instance.AddUnRepeatableDialog(GlobalManager.StoryFileName.TalkToSuJin);
->>>>>>> new
         }
         
 

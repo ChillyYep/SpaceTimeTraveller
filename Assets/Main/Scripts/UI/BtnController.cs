@@ -14,11 +14,7 @@ public class BtnController : MonoBehaviour {
 
     public void NewGame(string name)
     {
-<<<<<<< HEAD
-        GloabalManager.SceneCodeManager.ChangeScene(name);
-=======
         GlobalManager.SceneCode.ChangeScene(name);
->>>>>>> new
         if (SaveAndLoad.instance != null)
         {
             SaveAndLoad.instance.CreateArchive();
@@ -32,11 +28,7 @@ public class BtnController : MonoBehaviour {
             aboutUsPanelInstance = Instantiate(aboutUsPanel);
         }
         aboutUsPanelInstance.GetComponent<Canvas>().worldCamera = Camera.main;
-<<<<<<< HEAD
-        aboutUsPanelInstance.GetComponent<Canvas>().sortingLayerName = GloabalManager.LayerNameManager.UILayer;
-=======
         aboutUsPanelInstance.GetComponent<Canvas>().sortingLayerName = GlobalManager.LayerName.UILayer;
->>>>>>> new
         aboutUsPanelInstance.GetComponent<Canvas>().sortingOrder = 3;
     }
 
@@ -52,11 +44,7 @@ public class BtnController : MonoBehaviour {
         }
         
         loadArchivePanelInstance.GetComponent<Canvas>().worldCamera = Camera.main;
-<<<<<<< HEAD
-        loadArchivePanelInstance.GetComponent<Canvas>().sortingLayerName = GloabalManager.LayerNameManager.UILayer;
-=======
         loadArchivePanelInstance.GetComponent<Canvas>().sortingLayerName = GlobalManager.LayerName.UILayer;
->>>>>>> new
         loadArchivePanelInstance.GetComponent<Canvas>().sortingOrder = 3;
     }
 

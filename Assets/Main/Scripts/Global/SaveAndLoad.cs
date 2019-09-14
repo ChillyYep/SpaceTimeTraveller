@@ -8,10 +8,7 @@ public class SaveAndLoad : MonoBehaviour {
     public static SaveAndLoad instance = null;//单件模式，SaveAndLoad的唯一索引
     private string sceneName = null;
     private string sceneCode = null;
-<<<<<<< HEAD
-=======
     [HideInInspector]
->>>>>>> new
     public List<string> propNames = null;
 
 
@@ -75,11 +72,7 @@ public class SaveAndLoad : MonoBehaviour {
         //Debug.Log("sceneCode:" + sceneCode);
         propNames = new List<string>(_currentArchive.propNames);
         //propNames = _currentArchive.propNames;
-<<<<<<< HEAD
-        GloabalManager.SceneCodeManager.ChangeScene(sceneCode);
-=======
         GlobalManager.SceneCode.ChangeScene(sceneCode);
->>>>>>> new
     }
     //存档
     public void SaveArchive()

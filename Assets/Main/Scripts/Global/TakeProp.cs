@@ -12,11 +12,7 @@ public class TakeProp : MonoBehaviour {
     {
         if (TipsManager.instance != null)
         {
-<<<<<<< HEAD
-            TipsManager.instance.FlyIn(GloabalManager.Tips.TakeProp);
-=======
             TipsManager.instance.FlyIn(GlobalManager.Tips.TakeProp);
->>>>>>> new
         }
     }
     void OnTriggerStay2D(Collider2D collision)

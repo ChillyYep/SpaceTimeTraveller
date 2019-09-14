@@ -24,11 +24,7 @@ public class SafeTrigger : MonoBehaviour
         {
             if (TipsManager.instance != null)
             {
-<<<<<<< HEAD
-                TipsManager.instance.FlyIn(GloabalManager.Tips.IntoOther);
-=======
                 TipsManager.instance.FlyIn(GlobalManager.Tips.IntoOther);
->>>>>>> new
             }
         }
     }
@@ -47,11 +43,7 @@ public class SafeTrigger : MonoBehaviour
             {
                 if (TipsManager.instance != null)
                 {
-<<<<<<< HEAD
-                    TipsManager.instance.FlyIn(GloabalManager.Tips.DontTouchProp);
-=======
                     TipsManager.instance.FlyIn(GlobalManager.Tips.DontTouchProp);
->>>>>>> new
                 }
             }
         }

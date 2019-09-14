@@ -5,33 +5,12 @@ using UnityEngine;
 public class CameraController : MonoBehaviour {
     public GameObject mainCharacter;
     public GameObject canvasArea;
-<<<<<<< HEAD
-    //public GameObject[] doors;
-    //public static GameObject currentDoor = null;
-    //public static Vector3 characterPos = Vector3.zero;
-=======
->>>>>>> new
 
     public static CameraController instance = null;
     [HideInInspector]
     public bool pauseControllCamera = false;
     public delegate void AfterCameraMove();
     public event AfterCameraMove _afterCameraMove;
-<<<<<<< HEAD
-    public event AfterCameraMove afterCameraMove
-    {
-        add
-        {
-            
-            _afterCameraMove += value;
-        }
-        remove
-        {
-
-        }
-    }
-=======
->>>>>>> new
     private float rightCriticalPointX;
     private float leftCriticalPointX;
     private const float startPosX = 1.0f;
@@ -65,28 +44,6 @@ public class CameraController : MonoBehaviour {
             deltaVector = mainCharacter.transform.position - transform.position;
             deltaVector.x = 0.0f;
         }
-<<<<<<< HEAD
-        //}
-        //else//出门位置
-        //{
-        //    mainCharacter.transform.position = characterPos;
-        //    transform.position = mainCharacter.transform.position - deltaVector;
-        //    characterPos = Vector3.zero;
-        //}
-        //Debug.Log("canvasCenter:" + canvasCenter);
-
-        //相机位置
-        //if (deltaVector == Vector3.zero) {
-        //    transform.position = new Vector3(leftCriticalPointX, transform.position.y, transform.position.z);
-        //    deltaVector = mainCharacter.transform.position - transform.position;
-        //    deltaVector.x = 0.0f;
-        //}
-        //else
-        //{
-        //    transform.position = mainCharacter.transform.position - deltaVector;
-        //}
-=======
->>>>>>> new
     }
 
     void FixedUpdate()

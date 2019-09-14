@@ -54,11 +54,7 @@ public class CameraMoveAnimController : MonoBehaviour
     
     void AddDialog()
     {
-<<<<<<< HEAD
-        DialogManager.instance.AddUnRepeatableDialog(GloabalManager.StoryFileName.Studio1);
-=======
         DialogManager.instance.AddUnRepeatableDialog(GlobalManager.StoryFileName.Studio1);
->>>>>>> new
 
     }
 

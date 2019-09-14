@@ -32,11 +32,7 @@ public class BadEndDialogTrigger : MonoBehaviour
             yield return new WaitForSeconds(0.5f);
             CharacterController.instance.Flip();
         }
-<<<<<<< HEAD
-        DialogManager.instance.AddUnRepeatableDialog(GloabalManager.StoryFileName.BadEnd);
-=======
         DialogManager.instance.AddUnRepeatableDialog(GlobalManager.StoryFileName.BadEnd);
->>>>>>> new
 
         CharacterController.instance.moveable = true;
     }

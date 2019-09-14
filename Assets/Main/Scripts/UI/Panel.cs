@@ -13,11 +13,7 @@ public class Panel : MonoBehaviour {
     }
     public void GoBack()
     {
-<<<<<<< HEAD
-        canvas.sortingLayerName = GloabalManager.LayerNameManager.BackgroundLayer;
-=======
         canvas.sortingLayerName = GlobalManager.LayerName.BackgroundLayer;
->>>>>>> new
         canvas.sortingOrder = -1;
     }
 

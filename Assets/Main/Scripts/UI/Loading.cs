@@ -29,11 +29,7 @@ public class Loading : MonoBehaviour
     private AsyncOperation asyn;
     void Start()
     {
-<<<<<<< HEAD
-        if (_preSceneName == GloabalManager.SceneCodeManager.HappyEnd)
-=======
         if (_preSceneName == GlobalManager.SceneCode.HappyEnd)
->>>>>>> new
         {
             if (Background != null)
             {
@@ -41,11 +37,7 @@ public class Loading : MonoBehaviour
                 Background.GetComponent<Image>().color = Color.white;
             }
         }
-<<<<<<< HEAD
-        else if (_preSceneName == GloabalManager.SceneCodeManager.BadEnd)
-=======
         else if (_preSceneName == GlobalManager.SceneCode.BadEnd)
->>>>>>> new
         {
             if (Background != null)
             {

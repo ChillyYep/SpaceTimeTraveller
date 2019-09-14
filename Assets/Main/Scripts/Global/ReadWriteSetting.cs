@@ -20,12 +20,7 @@ public class ReadWriteSetting {
     private static ReadWriteSetting readWirteSetting;
     private Setting setting;
     private FileStream fileStream;
-<<<<<<< HEAD
-
-    //private Setting setting;
-=======
     
->>>>>>> new
     private ReadWriteSetting()
     {
         setting = new Setting();
@@ -46,27 +41,6 @@ public class ReadWriteSetting {
     {
         try
         {
-<<<<<<< HEAD
-            fileStream = new FileStream(GloabalManager.PathNameManager.SettingPath, FileMode.Open,FileAccess.ReadWrite);
-        }
-        catch
-        {
-            //fileStream = new FileStream(PathManager.SettingPath, FileMode.Create, FileAccess.ReadWrite);
-            WriteSetting(false);
-            //try
-            //{
-            //    fileStream = File.Create(PathManager.SettingPath);
-            //}
-            //catch
-            //{
-            //    WriteSetting(false);
-            //}
-            //fileStream.Close();
-            return setting;
-        }
-        StreamReader sr = null;
-        //Setting setting;
-=======
             fileStream = new FileStream(GlobalManager.PathName.SettingPath, FileMode.Open,FileAccess.ReadWrite);
         }
         catch
@@ -75,7 +49,6 @@ public class ReadWriteSetting {
             return setting;
         }
         StreamReader sr = null;
->>>>>>> new
         string settingStr ="";
         try
         {
@@ -85,27 +58,10 @@ public class ReadWriteSetting {
         {
             return null;
         }
-<<<<<<< HEAD
-        //string line;
-        //while ((line = sr.ReadLine()) != null)
-        //{
-        //    settingStr += line;
-        //}
-        settingStr = sr.ReadLine();
-        //System.Type.GetType("Setting")
-        setting = JsonUtility.FromJson<Setting>(settingStr);
-        //if (setting == null)
-        //{
-
-        //}
-        sr.Close();
-        //sr.Dispose();
-=======
 
         settingStr = sr.ReadLine();
         setting = JsonUtility.FromJson<Setting>(settingStr);
         sr.Close();
->>>>>>> new
         fileStream.Close();
         return setting;
     }
@@ -116,19 +72,11 @@ public class ReadWriteSetting {
         {
             if (isTruncate)
             {
-<<<<<<< HEAD
-                fileStream = new FileStream(GloabalManager.PathNameManager.SettingPath, FileMode.Truncate, FileAccess.Write);
-            }
-            else
-            {
-                fileStream = new FileStream(GloabalManager.PathNameManager.SettingPath, FileMode.Create, FileAccess.Write);
-=======
                 fileStream = new FileStream(GlobalManager.PathName.SettingPath, FileMode.Truncate, FileAccess.Write);
             }
             else
             {
                 fileStream = new FileStream(GlobalManager.PathName.SettingPath, FileMode.Create, FileAccess.Write);
->>>>>>> new
             }
         }
         catch
@@ -149,17 +97,9 @@ public class ReadWriteSetting {
 
         sw.WriteLine(settingText);
         Debug.Log(settingText);
-<<<<<<< HEAD
-        //sw.Write(settingText.ToCharArray());
         sw.Flush();
         sw.Close();
         fileStream.Close();
-        //sw.Dispose();
-=======
-        sw.Flush();
-        sw.Close();
-        fileStream.Close();
->>>>>>> new
     }
 }
 

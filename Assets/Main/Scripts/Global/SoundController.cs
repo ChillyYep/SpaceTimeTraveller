@@ -65,26 +65,6 @@ public class SoundController : MonoBehaviour {
     {
         switch (sceneCode)
         {
-<<<<<<< HEAD
-            case GloabalManager.SceneCodeManager.MainUI:
-                ChangeMusicOrSoundEffect(music, mainUIMusice);
-                break;
-            case GloabalManager.SceneCodeManager.BeforeGame1:
-            case GloabalManager.SceneCodeManager.BeforeGame2:
-            case GloabalManager.SceneCodeManager.BeforeGame3:
-                ChangeMusicOrSoundEffect(music, beforeGameMusic);
-                break;
-            case GloabalManager.SceneCodeManager.FirstChapter:
-                ChangeMusicOrSoundEffect(music, firstChapterMusic);
-                break;
-            case GloabalManager.SceneCodeManager.SecondChapter:
-                ChangeMusicOrSoundEffect(music, secondChapterMusic);
-                break;
-            case GloabalManager.SceneCodeManager.HappyEnd:
-                ChangeMusicOrSoundEffect(music, happyEndMusic);
-                break;
-            case GloabalManager.SceneCodeManager.BadEnd:
-=======
             case GlobalManager.SceneCode.MainUI:
                 ChangeMusicOrSoundEffect(music, mainUIMusice);
                 break;
@@ -103,7 +83,6 @@ public class SoundController : MonoBehaviour {
                 ChangeMusicOrSoundEffect(music, happyEndMusic);
                 break;
             case GlobalManager.SceneCode.BadEnd:
->>>>>>> new
                 ChangeMusicOrSoundEffect(music, badEndMusic);
                 break;
             default:

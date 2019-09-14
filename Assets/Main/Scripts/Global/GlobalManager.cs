@@ -2,15 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-<<<<<<< HEAD
-public class GloabalManager
-{
-    public class PathNameManager
-=======
 public class GlobalManager
 {
     public class PathName
->>>>>>> new
     {
         public static readonly string MonologuePath = Application.streamingAssetsPath + "/Story/Monologue/";
         public static readonly string DialogPath=Application.streamingAssetsPath + "/Story/Dialog/";
@@ -42,21 +36,13 @@ public class GlobalManager
         public const string TalkToSuJin = "TalkToSuJin.json";
         public const string BadEnd = "BadEnd.json";
     }
-<<<<<<< HEAD
-    public class LayerNameManager
-=======
     public class LayerName
->>>>>>> new
     {
         public const string BackgroundLayer = "Background";
         public const string UILayer = "UI";
         public const string DialogLayer = "Dialog";
     }
-<<<<<<< HEAD
-    public class SceneCodeManager
-=======
     public class SceneCode
->>>>>>> new
     {
         public const string MainUI = "MainUI";
         public const string BeforeGame1 = "BeforeGame1";
@@ -83,59 +69,27 @@ public class GlobalManager
                 case BeforeGame1:
                 case BeforeGame2:
                 case BeforeGame3:
-<<<<<<< HEAD
-                    sceneName = SceneNameManager.BeforeGame;
-                    break;
-                //case CastleOutdoor:
-                //    sceneName = SceneNameManager.FirstChapter;
-                //    isSave = true;
-                //    break;
-                //case CastleIndoor:
-                //    sceneName = SceneNameManager.FirstChapter;
-                //    break;
-                //case FriaBedroom:
-                //    sceneName = SceneNameManager.FirstChapter;
-                //break;
-                case FirstChapter:
-                    sceneName = SceneNameManager.FirstChapter;
-=======
                     sceneName = SceneName.BeforeGame;
                     break;
                 case FirstChapter:
                     sceneName = SceneName.FirstChapter;
->>>>>>> new
                     isSave = true;
                     isLoading = true;
                     break;
                 case SecondChapter:
-<<<<<<< HEAD
-                    sceneName = SceneNameManager.SecondChapter;
-=======
                     sceneName = SceneName.SecondChapter;
->>>>>>> new
                     isSave = true;
                     isLoading = true;
                     break;
                 case BadEnd:
                 case HappyEnd:
-<<<<<<< HEAD
-                    sceneName = SceneNameManager.FinalChapter;
-=======
                     sceneName = SceneName.FinalChapter;
->>>>>>> new
                     isSave = true;
                     isLoading = true;
                     break;
                 default:
                     break;
             }
-<<<<<<< HEAD
-            //if (sceneName != null && SaveAndLoad.instance != null && BackPackManager.instance != null)
-            //{
-            //    SaveAndLoad.instance.SetCurrentArchive(sceneName, sceneCode, BackPackManager.instance.GetPropNames());
-            //}
-=======
->>>>>>> new
             if (isSave)//自动保存
             {
                 if (SaveAndLoad.instance != null && SaveAndLoad.instance.currentArchive != null && BackPackManager.instance != null)
@@ -155,11 +109,7 @@ public class GlobalManager
             }
         }
     }
-<<<<<<< HEAD
-    public class SceneNameManager
-=======
     public class SceneName
->>>>>>> new
     {
         public const string BeforeGame = "序章";
         public const string FirstChapter = "第一章";

@@ -350,24 +350,14 @@ public class PuzzleController : MonoBehaviour
             isFinish = true;
             TipsManager.instance.FlyIn("您已完成拼图");
             //chaosPuzzle.GetComponent<SpriteRenderer>().sprite = notched;
-<<<<<<< HEAD
-            StartCoroutine(destroyPuzzle());
-=======
             StartCoroutine(DestroyPuzzle());
->>>>>>> new
             Debug.Log("您已完成拼图");
         }
     }
 
-<<<<<<< HEAD
-    IEnumerator destroyPuzzle()
-    {
-        yield return new WaitForSeconds(1);//等动画结束
-=======
     IEnumerator DestroyPuzzle()
     {
         yield return new WaitForSeconds(1);//等拼图动画结束
->>>>>>> new
         if (boardAll != null && chaosPuzzle != null)
         {
             DestroyImmediate(boardAll);

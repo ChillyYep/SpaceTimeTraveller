@@ -27,11 +27,7 @@ public class PersonDetectBackpack : DetectBackpack
         {
             if (TipsManager.instance != null)//提示
             {
-<<<<<<< HEAD
-                TipsManager.instance.FlyIn(GloabalManager.Tips.TalkToSomeone);
-=======
                 TipsManager.instance.FlyIn(GlobalManager.Tips.TalkToSomeone);
->>>>>>> new
             }
         }
     }

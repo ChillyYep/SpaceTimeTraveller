@@ -70,11 +70,7 @@ public class DialogManager : MonoBehaviour {
     }
     void Update()
     {
-<<<<<<< HEAD
-        if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == GloabalManager.SceneCodeManager.MainUI)
-=======
         if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == GlobalManager.SceneCode.MainUI)
->>>>>>> new
         {
             instance = null;
             DestroyImmediate(gameObject);
@@ -188,11 +184,7 @@ public class DialogManager : MonoBehaviour {
         FileStream fileStream = null;
         try
         {
-<<<<<<< HEAD
-            fileStream = new FileStream(GloabalManager.PathNameManager.SpritesIndexPath, FileMode.Open, FileAccess.Read);
-=======
             fileStream = new FileStream(GlobalManager.PathName.SpritesIndexPath, FileMode.Open, FileAccess.Read);
->>>>>>> new
         }
         catch
         {
@@ -220,11 +212,7 @@ public class DialogManager : MonoBehaviour {
         FileStream fileStream = null;
         try
         {
-<<<<<<< HEAD
-            fileStream = new FileStream(GloabalManager.PathNameManager.DialogPath+"/"+ dialogFileName, FileMode.Open, FileAccess.Read);
-=======
             fileStream = new FileStream(GlobalManager.PathName.DialogPath+"/"+ dialogFileName, FileMode.Open, FileAccess.Read);
->>>>>>> new
         }
         catch
         {

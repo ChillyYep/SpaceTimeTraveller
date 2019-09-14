@@ -21,11 +21,7 @@ public class TextFadeInOut : MonoBehaviour {
     void Start () {
         //storyScripts = new List<string>(storyScripts2);
         Debug.Log("Application.dataPath:" + Application.dataPath);
-<<<<<<< HEAD
-        storyScripts = ReadStory.GetStoryReader().readFile(GloabalManager.PathNameManager.MonologuePath+filename);
-=======
         storyScripts = ReadStory.GetStoryReader().readFile(GlobalManager.PathName.MonologuePath+filename);
->>>>>>> new
         if (storyScripts.Count == 0)
         {
             storyScripts.Add("");
@@ -70,11 +66,7 @@ public class TextFadeInOut : MonoBehaviour {
             isPlayOtherAnim = true;
             if (sceneCode != "")
             {
-<<<<<<< HEAD
-                GloabalManager.SceneCodeManager.ChangeScene(sceneCode);
-=======
                 GlobalManager.SceneCode.ChangeScene(sceneCode);
->>>>>>> new
             }
         }
     }

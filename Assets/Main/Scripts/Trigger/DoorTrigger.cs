@@ -46,11 +46,7 @@ public class DoorTrigger : MonoBehaviour {
                 {
                     if (forbiddenTips == "")
                     {
-<<<<<<< HEAD
-                        TipsManager.instance.FlyIn(GloabalManager.Tips.DoorIsClose);
-=======
                         TipsManager.instance.FlyIn(GlobalManager.Tips.DoorIsClose);
->>>>>>> new
                     }
                     else
                     {
@@ -65,11 +61,7 @@ public class DoorTrigger : MonoBehaviour {
     {
         if (TipsManager.instance != null)
         {
-<<<<<<< HEAD
-            TipsManager.instance.FlyIn(GloabalManager.Tips.SpaceToEnterTip);
-=======
             TipsManager.instance.FlyIn(GlobalManager.Tips.SpaceToEnterTip);
->>>>>>> new
         }
     }
 }

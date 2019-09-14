@@ -25,11 +25,7 @@ public class SomeScripts : MonoBehaviour {
     }
     // Use this for initialization
     void Start () { 
-<<<<<<< HEAD
-        scripts = ReadStory.GetStoryReader().readFile(GloabalManager.PathNameManager.MonologuePath + filename);
-=======
         scripts = ReadStory.GetStoryReader().readFile(GlobalManager.PathName.MonologuePath + filename);
->>>>>>> new
         if (scripts.Count != 0)
         {
             index = 0;

@@ -8,32 +8,16 @@ public class CharacterController : MonoBehaviour {
     [HideInInspector]
     public bool moveable = true;
     public GameObject exclam;
-<<<<<<< HEAD
-
-    //private bool isGround = true;
-=======
     
->>>>>>> new
     private Rigidbody2D rb2D;
     private Animator animator;
     private Vector2 velocity;
     private bool facingRight = true;
-<<<<<<< HEAD
-    //private bool isJump = false;
-    private AnimatorStateInfo animatorStateinfo;
-    //private const int Force = 1000;
-    private const int Gravity = 500;
-    private const float JumpHeight = 30.0f;
-    public static CharacterController instance = null;
-
-    //private Rigidbody2D rg2D;
-=======
     private AnimatorStateInfo animatorStateinfo;
     private const int Gravity = 500;
     private const float JumpHeight = 30.0f;
     public static CharacterController instance = null;
     
->>>>>>> new
     void Awake()
     {
         if (instance == null)
@@ -46,25 +30,11 @@ public class CharacterController : MonoBehaviour {
         }
         moveable = true;
         Debug.Log("Awake"+moveable);
-<<<<<<< HEAD
-        //DontDestroyOnLoad(gameObject);
-=======
->>>>>>> new
         rb2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         velocity = Vector2.right;
     }
 
-<<<<<<< HEAD
-    //void OnCollisionEnter2D(Collision2D collision)
-    //{
-    //    if (SoundController.instance != null)
-    //    {
-    //        SoundController.instance.PlaySoundEffect(SoundController.SoundEffect.HIT);
-    //    }
-    //}
-=======
->>>>>>> new
     void FixedUpdate()
     {
         if (ChapterTransition.isOver)
@@ -72,23 +42,10 @@ public class CharacterController : MonoBehaviour {
             if (moveable)
             {
                 float horizontal = Input.GetAxis("Horizontal");
-<<<<<<< HEAD
-                //transform.Translate(new Vector2(maxSpeed * horizontal, 0));
-                if (horizontal != 0)
-                {
-                    velocity.x = maxSpeed * horizontal;
-                    //velocity.y = rb2D.velocity.y;
-                    transform.Translate(velocity);
-                    //rb2D.velocity += velocity;
-                    //rb2D.AddForce(new Vector2(maxSpeed * horizontal, 0));
-                    //rg2D.MovePosition(velocity);
-                    //velocity.x = 0;
-=======
                 if (horizontal != 0)
                 {
                     velocity.x = maxSpeed * horizontal;
                     transform.Translate(velocity);
->>>>>>> new
                 }
 
                 if (horizontal > 0 && !facingRight)//向右转
@@ -104,10 +61,6 @@ public class CharacterController : MonoBehaviour {
             }
 
         }
-<<<<<<< HEAD
-        //Debug.Log("rb2D.velocity:" + rb2D.velocity);
-=======
->>>>>>> new
     }
 
     public void Flip()
@@ -135,13 +88,7 @@ public class CharacterController : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.UpArrow)&& rb2D.velocity.y==0)
         {
             rb2D.velocity = new Vector2(rb2D.velocity.x, JumpHeight);
-<<<<<<< HEAD
-            //rb2D.AddForce(Vector2.up * JumpHeight);
             animator.Play("Jump");
-            //isJump = true;
-=======
-            animator.Play("Jump");
->>>>>>> new
         }
     }
 

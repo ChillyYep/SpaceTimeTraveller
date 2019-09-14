@@ -26,11 +26,7 @@ public class TalkToNPC : DetectBackpack
     {
         if (TipsManager.instance != null)//提示
         {
-<<<<<<< HEAD
-            TipsManager.instance.FlyIn(GloabalManager.Tips.TalkToSomeone);
-=======
             TipsManager.instance.FlyIn(GlobalManager.Tips.TalkToSomeone);
->>>>>>> new
         }
     }
 
@@ -72,11 +68,7 @@ public class TalkToNPC : DetectBackpack
     {
         switch (storyFileName)
         {
-<<<<<<< HEAD
-            case GloabalManager.StoryFileName.TalkToAyr3:
-=======
             case GlobalManager.StoryFileName.TalkToAyr3:
->>>>>>> new
                 if (IsExistInBackpack())
                 {
                     NextDialog();

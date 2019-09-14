@@ -36,11 +36,7 @@ public class SettingPanel : MonoBehaviour {
         if (canvas.worldCamera != Camera.main)
         {
             canvas.worldCamera = Camera.main;
-<<<<<<< HEAD
-            canvas.sortingLayerName = GloabalManager.LayerNameManager.BackgroundLayer;
-=======
             canvas.sortingLayerName = GlobalManager.LayerName.BackgroundLayer;
->>>>>>> new
             canvas.sortingOrder = -1;
         }
     }
@@ -66,11 +62,7 @@ public class SettingPanel : MonoBehaviour {
     public void ShowSettingPanel()
     {
         Canvas canvas = GetComponent<Canvas>();
-<<<<<<< HEAD
-        canvas.sortingLayerName = GloabalManager.LayerNameManager.UILayer;
-=======
         canvas.sortingLayerName = GlobalManager.LayerName.UILayer;
->>>>>>> new
         canvas.sortingOrder = 3;
     }
 }

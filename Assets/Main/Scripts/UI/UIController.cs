@@ -27,11 +27,7 @@ public class UIController : MonoBehaviour {
 
     void Update()
     {
-<<<<<<< HEAD
-        if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == GloabalManager.SceneCodeManager.MainUI && instance != null)
-=======
         if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == GlobalManager.SceneCode.MainUI && instance != null)
->>>>>>> new
         {
             Destroy(gameObject);
         }
@@ -55,11 +51,7 @@ public class UIController : MonoBehaviour {
 
     public void GotoMainUI()
     {
-<<<<<<< HEAD
-        GloabalManager.SceneCodeManager.ChangeScene(GloabalManager.SceneCodeManager.MainUI);
-=======
         GlobalManager.SceneCode.ChangeScene(GlobalManager.SceneCode.MainUI);
->>>>>>> new
         //UnityEngine.SceneManagement.SceneManager.LoadScene(GloabalManager.SceneCodeManager.MainUI);
     }
 

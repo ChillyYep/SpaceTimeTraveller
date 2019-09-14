@@ -10,10 +10,7 @@ public class CodeLock : MonoBehaviour {
     private int ptr = 0;
     private int[] code = { 1, 5, 4, 2 };//正确密码
 
-<<<<<<< HEAD
-=======
     //显示区域四个格子
->>>>>>> new
     public Image[] showAreas = new Image[MaxAmount];
     //索引0为Blank，索引1-10为0-9的数字
     public Sprite[] numSprites = new Sprite[11];

@@ -13,11 +13,7 @@ public class ReadWriteArchive{
     private static ReadWriteArchive readWriteArchive;
     private readonly string suffix = ".json";//文件格式为json
     //private Archive currentArchive;
-<<<<<<< HEAD
-    private readonly string ArchivePath = GloabalManager.PathNameManager.ArchivePath;
-=======
     private readonly string ArchivePath = GlobalManager.PathName.ArchivePath;
->>>>>>> new
     //private string fileName;
     //存档类
     public class Archive
@@ -131,14 +127,9 @@ public class ReadWriteArchive{
             fileStream.Close();
             return null;
         }
-<<<<<<< HEAD
-        string ArchiveJson = sr.ReadLine();
-        archive = JsonUtility.FromJson<Archive>(ArchiveJson);
-=======
         //读档
         string ArchiveJson = sr.ReadLine();//sr为文件输出流
         archive = JsonUtility.FromJson<Archive>(ArchiveJson);//json对象转换为Archive对象
->>>>>>> new
         sr.Close();
         fileStream.Close();
         return archive;
@@ -165,12 +156,8 @@ public class ReadWriteArchive{
             fileStream.Close();
             return;
         }
-<<<<<<< HEAD
-        sw.WriteLine(JsonUtility.ToJson(archive));
-=======
         //存档
         sw.WriteLine(JsonUtility.ToJson(archive));//sw为文件输入流，将Archive对象转化为json对象
->>>>>>> new
         sw.Flush();
         sw.Close();
 
@@ -194,11 +181,7 @@ public class ReadWriteArchive{
             fileStream.Close();
             return null;
         }
-<<<<<<< HEAD
-        archive = new Archive(GloabalManager.SceneNameManager.BeforeGame, GloabalManager.SceneCodeManager.BeforeGame1, dateTimeFormat1, new List<string>(), dateTimeFormat2);
-=======
         archive = new Archive(GlobalManager.SceneName.BeforeGame, GlobalManager.SceneCode.BeforeGame1, dateTimeFormat1, new List<string>(), dateTimeFormat2);
->>>>>>> new
         string ArchiveJson = JsonUtility.ToJson(archive);
         sw.WriteLine(ArchiveJson);
         Debug.Log("ArchiveJson:" + ArchiveJson);
